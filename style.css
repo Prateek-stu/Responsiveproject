@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(222, 211, 211);
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+section {
+  max-width: 1600px;
+}
+
+body {
+  background-color: rgb(14, 14, 14);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+}
+main .view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view1 .top {
+  width: 100%;
+}
+main .view1 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main .view1 .bottom {
+  background-color: rgb(35, 34, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+main .view1 .bottom .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .view1 .bottom .content h3 {
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main .view1 .bottom .content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: rgb(175, 164, 164);
+  opacity: 0.9;
+}
+main .view1 .bottom .content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+main .view2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+main .view2 .top,
+main .view2 .bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+main .view2 .top .element,
+main .view2 .bottom .element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+main .view2 .top .element small,
+main .view2 .bottom .element small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(194, 185, 185);
+  opacity: 0.8;
+}
+main .view2 .top .element h2,
+main .view2 .bottom .element h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .view3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+main .view3 .top {
+  width: 100%;
+}
+main .view3 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main .view3 .bottom {
+  background-color: rgb(35, 34, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+main .view3 .bottom .bottom > p {
+  text-transform: uppercase;
+}
+main .view3 .bottom .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+main .view3 .bottom .content h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main .view3 .bottom .content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: rgb(175, 164, 164);
+  opacity: 0.9;
+}
+main .view3 .bottom .content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+main .view4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+main .view4 .top {
+  width: 100%;
+}
+main .view4 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main .view4 .bottom {
+  background-color: rgb(35, 34, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+main .view4 .bottom .bottom > p {
+  text-transform: uppercase;
+}
+main .view4 .bottom .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+main .view4 .bottom .content h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main .view4 .bottom .content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: rgb(175, 164, 164);
+  opacity: 0.9;
+}
+main .view4 .bottom .content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+main .view5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+main .view5 .left {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: rgb(185, 177, 177);
+  font-weight: 400;
+}
+main .view5 .right {
+  display: none;
+}
+main .view6 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+main .view6 .card1 {
+  background-image: url(/Responsive/images/card1.webp);
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+main .view6 .card1 .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main .view6 .card1 .top i {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main .view6 .card1 i, main .view6 .card1 .bottom {
+  background-color: rgba(101, 95, 95, 0.438);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main .view6 .card1 .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main .view6 .card1 .bottom p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .view6 .card2 {
+  background-image: url(/Responsive/images/card2.webp);
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+main .view6 .card2 .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main .view6 .card2 .top i {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main .view6 .card2 i, main .view6 .card2 .bottom {
+  background-color: rgba(101, 95, 95, 0.438);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main .view6 .card2 .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main .view6 .card2 .bottom p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .view6 .card3 {
+  background-image: url(/Responsive/images/card3.webp);
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+main .view6 .card3 .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main .view6 .card3 .top i {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main .view6 .card3 i, main .view6 .card3 .bottom {
+  background-color: rgba(101, 95, 95, 0.438);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main .view6 .card3 .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main .view6 .card3 .bottom p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .view7 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+main .view7 .top {
+  width: 100%;
+}
+main .view7 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main .view7 .bottom {
+  background-color: rgb(35, 34, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+main .view7 .bottom .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main .view7 .bottom .content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .view7 .bottom .content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: rgb(175, 164, 164);
+  opacity: 0.9;
+}
+main .view7 .bottom button {
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.3rem;
+}
+main .view8 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+}
+main .view8 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  background-color: rgb(189, 189, 74);
+  border-radius: 10px;
+}
+main .view8 .top p {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+  color: rgb(24, 23, 23);
+}
+main .view8 .top .left h1 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+main .view8 .top .left button {
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+main .view9 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view9 .oneContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  background-color: #232222;
+  border-radius: 10px;
+}
+main .view9 .oneContent p {
+  font-size: 2rem;
+  color: #AFA4A4;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .view9 .oneContent .icons {
+  display: flex;
+  justify-content: left;
+  gap: 1.3rem;
+}
+main .view9 .oneContent .icons i {
+  background-color: transparent;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(182, 169, 169, 0.696);
+  border-radius: 50%;
+}
+main .view9 .twoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #232222;
+  border-radius: 10px;
+}
+main .view9 .twoContent .view1 p {
+  font-size: 2rem;
+  color: #AFA4A4;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .view9 .twoContent .view1 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view9 .twoContent .view1 .links a {
+  text-decoration: none;
+  color: rgb(131, 125, 125);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main .view9 .twoContent .view1 button {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #BDBD4A;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+main .view9 .twoContent .view2 p {
+  font-size: 2rem;
+  color: #AFA4A4;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .view9 .twoContent .view2 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view9 .twoContent .view2 .links a {
+  text-decoration: none;
+  color: rgb(131, 125, 125);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main .view9 .twoContent .view3 p {
+  font-size: 2rem;
+  color: #AFA4A4;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .view9 .twoContent .view3 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view9 .twoContent .view3 .links a {
+  text-decoration: none;
+  color: rgb(131, 125, 125);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1100px) {
+  main .view1 {
+    flex-direction: row;
+  }
+  main .view1 .top,
+  main .view1 .bottom {
+    width: 50%;
+  }
+  main .view1 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main .view1 .bottom .content {
+    gap: 1rem;
+  }
+  main .view1 .bottom .content h3 {
+    font-size: 3.5rem;
+    font-weight: 350;
+  }
+  main .view1 .bottom .content p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  main .view1 .bottom .content button {
+    padding: 1rem;
+  }
+  main .view2 {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  main .view3 {
+    flex-direction: row-reverse;
+  }
+  main .view3 .top,
+  main .view3 .bottom {
+    width: 50%;
+  }
+  main .view3 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main .view3 .bottom .paragraph {
+    display: flex;
+    gap: 2rem;
+  }
+  main .view3 .bottom .paragraph h1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  main .view3 .bottom .paragraph p {
+    font-size: 1rem;
+  }
+  main .view4 {
+    flex-direction: row;
+  }
+  main .view4 .top,
+  main .view4 .bottom {
+    width: 50%;
+  }
+  main .view4 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main .view4 .bottom .paragraph {
+    display: flex;
+    gap: 2rem;
+  }
+  main .view4 .bottom .paragraph h1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  main .view4 .bottom .paragraph p {
+    font-size: 1rem;
+  }
+  main .view5 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .view5 .left, main .view5 .right {
+    width: 50%;
+  }
+  main .view5 .right {
+    display: inline-block;
+    text-transform: uppercase;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  main .view6 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main .view6 .card1, main .view6 .card2, main .view6 .card3 {
+    width: calc(33.3333333333% - 1.33rem);
+  }
+  main .view7 {
+    flex-direction: row;
+  }
+  main .view7 .top, main .view7 .bottom {
+    width: 50%;
+  }
+  main .view7 .bottom {
+    justify-content: space-between;
+    padding: 3.5rem;
+  }
+  main .view7 .bottom .content h1 {
+    font-weight: 400;
+  }
+  main .view8 {
+    flex-direction: row;
+  }
+  main .view8 .top {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+  main .view8 .top p {
+    color: black;
+  }
+  main .view8 .top .left {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .view8 .top .left h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    width: 80%;
+  }
+  main .view8 .top .left button {
+    width: 20%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

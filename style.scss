@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(222, 211, 211);
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+@mixin flex-column($gap: 0rem) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+section {
+  max-width: 1600px;
+}
+body {
+  background-color: rgb(14, 14, 14);
+}
+main {
+  width: 100%;
+  @include flex-column;
+  align-items: center;
+
+  .view1 {
+    width: 100%;
+    @include flex-column(1rem);
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+
+    .bottom {
+      background-color: rgb(35, 34, 34);
+      @include flex-column(2rem);
+
+      padding: 2rem;
+      border-radius: 1rem;
+
+      .content {
+        @include flex-column(0.7rem);
+
+        h3 {
+          font-size: 3rem;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          color: rgb(175, 164, 164);
+          opacity: 0.9;
+        }
+        button {
+          width: fit-content;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .view2 {
+    @include flex-column(2rem);
+    width: 100%;
+    padding: 1rem;
+
+    .top,
+    .bottom {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      .element {
+        @include flex-column(0.5rem);
+        text-align: center;
+        small {
+          font-size: 1.2rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: rgb(194, 185, 185);
+          opacity: 0.8;
+        }
+        h2 {
+          font-size: 3rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .view3 {
+    @include flex-column(1rem);
+    width: 100%;
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      background-color: rgb(35, 34, 34);
+      @include flex-column(2rem);
+
+      padding: 2rem;
+      border-radius: 1rem;
+
+      .bottom > p {
+        text-transform: uppercase;
+      }
+
+      .content {
+        @include flex-column(0.7rem);
+        width: 100%;
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          color: rgb(175, 164, 164);
+          opacity: 0.9;
+        }
+        button {
+          width: fit-content;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .view4 {
+    @include flex-column(1rem);
+    width: 100%;
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      background-color: rgb(35, 34, 34);
+      @include flex-column(2rem);
+
+      padding: 2rem;
+      border-radius: 1rem;
+
+      .bottom > p {
+        text-transform: uppercase;
+      }
+
+      .content {
+        @include flex-column(0.7rem);
+        width: 100%;
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          color: rgb(175, 164, 164);
+          opacity: 0.9;
+        }
+        button {
+          width: fit-content;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .view5{
+    width: 100%;
+    @include flex-column(1rem);
+    padding: 2rem;
+    .left{
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: rgb(185, 177, 177);
+      font-weight: 400;
+
+    }
+    .right{
+      display: none;
+    }
+  }
+  .view6{
+    @include flex-column(2rem);
+    width: 100%;
+    padding: 1rem;
+
+    .card1{
+      background-image: url(/Responsive/images/card1.webp);
+      width: 100%;
+      background-size: cover;
+      aspect-ratio: 1/1;
+      border-radius: 1rem;
+      @include flex-column(0rem);
+      justify-content: space-between;
+      padding: 2rem;
+
+      .top{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+      }
+
+      .top i{
+        width: fit-content;
+        border-radius: 50%;
+      }
+     
+      i,.bottom{
+          background-color: rgba(101, 95, 95, 0.438);
+          backdrop-filter: blur(5px);
+          border: 1px solid white;
+          border-radius: 0.7rem;
+          padding: 0.5rem;
+        }
+
+        .bottom{
+          display: flex;
+          justify-content: space-between;
+          padding: 1.5rem 1rem;
+          p{
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+
+    }
+    .card2{
+      background-image: url(/Responsive/images/card2.webp);
+      width: 100%;
+      background-size: cover;
+      aspect-ratio: 1/1;
+      border-radius: 1rem;
+      @include flex-column(0rem);
+      justify-content: space-between;
+      padding: 2rem;
+
+      .top{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+      }
+
+      .top i{
+        width: fit-content;
+        border-radius: 50%;
+      }
+     
+      i,.bottom{
+          background-color: rgba(101, 95, 95, 0.438);
+          backdrop-filter: blur(5px);
+          border: 1px solid white;
+          border-radius: 0.7rem;
+          padding: 0.5rem;
+        }
+
+        .bottom{
+          display: flex;
+          justify-content: space-between;
+          padding: 1.5rem 1rem;
+          p{
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+
+    }
+    .card3{
+      background-image: url(/Responsive/images/card3.webp);
+      width: 100%;
+      background-size: cover;
+      aspect-ratio: 1/1;
+      border-radius: 1rem;
+      @include flex-column(0rem);
+      justify-content: space-between;
+      padding: 2rem;
+
+      .top{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+      }
+
+      .top i{
+        width: fit-content;
+        border-radius: 50%;
+      }
+     
+      i,.bottom{
+          background-color: rgba(101, 95, 95, 0.438);
+          backdrop-filter: blur(5px);
+          border: 1px solid white;
+          border-radius: 0.7rem;
+          padding: 0.5rem;
+        }
+
+        .bottom{
+          display: flex;
+          justify-content: space-between;
+          padding: 1.5rem 1rem;
+          p{
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+
+    }
+  }
+  .view7 {
+    @include flex-column(1rem);
+    width: 100%;
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      background-color: rgb(35, 34, 34);
+      @include flex-column(3rem);
+      padding: 2rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+
+      .content {
+        @include flex-column(1rem);
+        width: 100%;
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          color: rgb(175, 164, 164);
+          opacity: 0.9;
+        }
+        
+      }
+      button {
+        padding: 1rem;
+          width: fit-content;
+          text-transform: uppercase;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: white;
+          font-size: 1.3rem;
+        }
+    }
+  }
+  .view8{
+    @include flex-column(1rem);
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+      .top{
+        @include flex-column(1.5rem);
+        text-transform: uppercase;
+        padding: 1.5rem;
+        background-color: rgb(189, 189, 74);
+        border-radius: 10px;
+
+         p{
+          font-size: 1rem;
+          font-weight: 400;
+          opacity: 0.8;
+          color: rgb(24, 23, 23);
+        }
+
+       .left{
+        
+        h1{
+          color: black;
+          font-size: 2.5rem;
+          font-weight: 200;
+          
+        }
+         button{
+          padding: 1rem;
+          width: 100%;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 0.5rem;
+          outline: none;
+          background-color: black;
+          color: white;
+          font-size: 1.3rem;
+        }
+       }
+       
+      }
+  }
+  .view9{
+    width: 100%;
+    @include flex-column(1rem);
+    padding: 1rem;
+    .oneContent{
+      @include flex-column(4rem);
+      padding: 2rem;
+      background-color: #232222;
+      border-radius: 10px;
+
+      p{
+        font-size: 2rem;
+        color: #AFA4A4;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      .icons{
+        display: flex;
+        justify-content: left;
+        gap: 1.3rem;
+        
+        i{
+          background-color: transparent;
+          font-size: 1.6rem;
+          padding: 0.5rem;
+          border: 1px solid rgba(182, 169, 169, 0.696);
+          border-radius: 50%;
+
+        }
+      }
+    }
+    .twoContent{
+      @include flex-column(2rem);
+      padding: 1rem;
+      background-color: #232222;
+      border-radius: 10px;
+      .view1{
+          p{
+          font-size: 2rem;
+          color: #AFA4A4;
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+        .links{
+          @include flex-column(1rem);
+
+            a{
+              text-decoration: none;
+              color: rgb(131, 125, 125);
+              font-size: 1.5rem;
+              font-weight: 500;
+            }
+        }
+        button{
+              width: fit-content;
+              background-color: #BDBD4A;
+              padding: 1rem 2rem;
+              border: none;
+              outline: none;
+              border-radius: 10px;
+        }
+      }
+      .view2{
+          p{
+              font-size: 2rem;
+          color: #AFA4A4;
+          text-transform: uppercase;
+          font-weight: 400;
+          }
+          .links{
+            @include flex-column(1rem);
+
+            a{
+              text-decoration: none;
+              color: rgb(131, 125, 125);
+              font-size: 1.5rem;
+              font-weight: 500;
+            }
+          }
+      }
+      .view3{
+          p{
+              font-size: 2rem;
+          color: #AFA4A4;
+          text-transform: uppercase;
+          font-weight: 400;
+          }
+          .links{
+            @include flex-column(1rem);
+
+            a{
+              text-decoration: none;
+              color: rgb(131, 125, 125);
+              font-size: 1.5rem;
+              font-weight: 500;
+            }
+          }
+      }
+
+
+
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  main {
+    .view1 {
+      flex-direction: row;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .content {
+          gap: 1rem;
+          h3 {
+            font-size: 3.5rem;
+            font-weight: 350;
+          }
+          p {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+          }
+          button{
+            padding: 1rem;
+          }
+        }
+      }
+    }
+    .view2 {
+      flex-direction: row;
+      padding: 1rem;
+    }
+    .view3 {
+      flex-direction: row-reverse;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .paragraph {
+          display: flex;
+          gap: 2rem;
+
+          h1 {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .view4 {
+      flex-direction: row;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .paragraph {
+          display: flex;
+          gap: 2rem;
+
+          h1 {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .view5{
+      flex-direction: row;
+      justify-content: space-between;
+      .left,.right{
+        width: 50%  ;
+      }
+      .right{
+        display: inline-block;
+        text-transform: uppercase;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+    }
+    .view6{
+      flex-direction: row;
+      gap: 2rem;
+      .card1,.card2,.card3{
+        width: calc((100% / 3) - 1.33rem);
+      }
+    }
+    .view7{
+      flex-direction: row;
+      
+
+      .top,.bottom{
+        width: 50%;
+      }
+      .bottom{
+        justify-content: space-between;
+        padding: 3.5rem;
+       .content{
+          // gap: 2rem;
+          
+          h1{
+            font-weight: 400;
+          }
+      }
+    }
+  }
+  .view8{
+
+    flex-direction: row;
+    .top{
+      width: 100%;
+      padding: 2rem 3rem;
+      p{
+        color: black;
+        
+      }
+      .left{
+        display: flex;
+        justify-content: space-between;
+        
+        h1{
+          font-size: 4rem;
+          font-weight: 400;
+          width: 80%;
+        }
+        button{
+          width: 20%;
+          height: fit-content;
+          padding: 1rem;
+        }
+      }
+  }
+  }
+}
+}
